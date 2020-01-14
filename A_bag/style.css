@@ -1,0 +1,134 @@
+body, html{
+    margin: 0;
+    height: 100%;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 3vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  background-color:#13294B;
+  border-bottom-style: solid;
+  border-bottom-color: #E84A27;
+  border-bottom-width: 2px;
+}
+
+li {
+  float: right;
+}
+
+li a{
+  position: relative;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size : 15px;
+  font-family: Arial;
+}
+
+
+li b{
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size : 15px;
+  font-family: Arial;
+}
+
+
+
+li a:hover:not(.active){
+  background-color: #E84A27;
+  color: #000000;
+}
+
+li a.active{
+    background-color: #89CFF0;
+    margin: 0;
+}
+
+
+.container {
+    position: relative;
+    background-image: url("hahaha.JPG");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+
+.text-pos {
+  position: absolute;
+  color: #FFFFFF;
+  font-size: 8vmin;
+  font-family: Arial;
+}
+
+.block {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.2); /* Black w/opacity/see-through */
+  color: white;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+  
+}
+
+.button {
+  background-color: #13294B;
+  border: none;
+  color: white;
+  padding: auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 60%;
+  height: 5vw;
+  display: inline-block;
+  text-decoration:none;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #E84A27;
+  color: #000000;
+}
+
+.button_zh {
+  background-color: #E84A27;
+  border: none;
+  color: #000000;
+  padding: auto;
+  text-align: center;
+  box-sizing: border-box;
+  width: 60%;
+  height: 5vw;
+  display: inline-block;
+  text-decoration:none;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.button_zh:hover{
+  background-color: #13294B;
+  color: white;
+}

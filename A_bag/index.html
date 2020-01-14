@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title> Welcome to my personal website! </title>
+<head>
+<link rel = "stylesheet" href = style.css>
+<link rel = "flags" href = "flag-icon-css-master/css/flag-icon.css">
+<script src="code.js"> </script>
+<script src="https://kit.fontawesome.com/521883dff8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<ul>
+    <li><a class = "active" href = "index.html" > <i class = "fa fa-home"> </i> </a></li>
+    <li><a href = "about.html" > ABOUT ME </a></li>
+    <li><a href = "resume_19_sep.pdf" download> RESUMÉ </a></li>
+    <li><a href = "trivia.html" > TRIVIA </a></li>
+    <li><a href = "index_zh.html"> <img src = "china-flag-icon-16.png" style = "width:20px; height:15px;"> </img> </a> </li>
+    <li style = "float: left; font-weight:bold; "> <b> HONGSHUO ZHANG </b> </li>
+</ul>
+<div class="container"> </div>
+    <div class = "text-pos"> 
+        <script> 
+        var greeting = ['Welcome', 'Willkommen', 'Bienvenue', 'Benvenuto', 'Bienvenido', '欢迎', 'Welkom', 
+                       'Добро пожаловать', 'Добродошли', 'Добре дошли', 'Bywaj', 'Velkommen']
+        var s = greeting[Math.floor(Math.random() * greeting.length)];
+        </script>
+    </div>
+   
+    <div class = "block"> 
+        <p> Hongshuo Zhang</p>
+        <p> Bachelor of Science in Computer Engineering </p>
+        <p> University of Illinois, Class of 2021 </p>
+        <p> 
+            <form action= "about.html">
+                <button class = "button" type = "submit"> ABOUT ME </button> 
+            </form>
+            <form action = "resume_19_sep.pdf" download>
+                <button class = "button" type = "submit"> RESUMÉ </button> 
+            </form>
+            <form action = "trivia.html">
+                <button class = "button" type = "submit"> TRIVIA </button> 
+            </form>
+            <form action = "index_zh.html">
+                <button class = "button" type = "submit"> 中文 </button>
+            </form>
+        </p>
+    </div>
+
+
+</body>
+</html>

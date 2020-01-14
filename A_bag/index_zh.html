@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<meta name = "viewport" content = "width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<title> Welcome to my personal website! </title>
+<head>
+<link rel = "stylesheet" href = style_zh.css>
+<link rel = "flags" href = "flag-icon-css-master/css/flag-icon.css">
+<script src="code.js"> </script>
+<script src="https://kit.fontawesome.com/521883dff8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<ul style = "background-color:#E84A27; border-bottom-color:#13294B;">
+    <li><a class = "active" href = "index.html"> <i class = "fa fa-home"> </i> </a></li>
+    <li><a href = "about_zh.html" > 关于我 </a></li>
+    <li><a href = "resume_19_sep.pdf" download > 简历 </a></li>
+    <li><a href = "trivia_zh.html" > 冷知识 </a></li>
+    <li><a href = "index.html" > <img src = "us.png" style = "width:20px; height:15px;"> </img> </a> </li>
+    <li style = "float: left; font-weight:bold;"> <b> 张洪硕 </b> </li>
+</ul>
+
+<div class="container"> </div>
+    <div class = "text-pos"> 
+        <script> 
+        var greeting = ['Welcome', 'Willkommen', 'Bienvenue', 'Benvenuto', 'Bienvenido', '欢迎', 'Welkom', 
+                       'Добро пожаловать', 'Добродошли', 'Добре дошли', 'Bywaj', 'Velkommen']
+        var s = greeting[Math.floor(Math.random() * greeting.length)];
+        </script>
+    </div>
+   
+    <div class = "block" style = "color:black; background-color: rgb(255,255,255); background-color: rgba(255,255,255,0.2); "> 
+        <p> 张洪硕</p>
+        <p> 伊利诺伊大学2021届计算机工程理学学士 </p>
+        <p> 
+            <form action= "about.html">
+                <button class = "button_zh" type = "submit"> 关于我 </button> 
+            </form>
+            <form action = "resume_19_sep.pdf" download>
+                <button class = "button_zh" type = "submit"> 简历 </button> 
+            </form>
+            <form action = "trivia.html">
+                <button class = "button_zh" type = "submit"> 冷知识 </button> 
+            </form>
+            <form action = "index.html">
+                <button class = "button_zh" type = "submit"> ENGLISH </button>
+            </form>
+        </p>
+    </div>
+
+
+</body>
+</html>
