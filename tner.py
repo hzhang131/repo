@@ -6,7 +6,7 @@ MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'Augus
 DAYS = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
 PART = ['morning', 'noon', 'afternoon', 'evening']
 TIME = ['am', 'a.m.', 'pm', 'p.m.', 'A.M.', 'P.M.', 'AM', 'PM']
-HOLIDAYS = ["New Year's Day", 'Martin Luther King, Jr. Day', 'George Washington’s Birthday', 'Memorial Day', 'Independence Day', 'Labor Day', 'Columbus Day', 'Veterans Day', 'Thanksgiving Day', 'Christmas Day']
+HOLIDAYS = ["New Year's Day", 'Martin Luther King, Jr. Day', 'George Washington’s Birthday', 'Memorial Day', 'Independence Day', 'Labor Day', 'Columbus Day', 'Veterans Day', 'Thanksgiving Day', 'Christmas Day', 'Christmas Eve', 'Christmas']
 
 
 def LEAP_YEAR(yr):
@@ -40,9 +40,8 @@ def sanity_check(lst):
 
     # removes February 19nd, March 2st, the 31st of February
     for i in lst:
-        for j in re.findall(r'(?:[023]?1nd|[023]?1rd|[023]?1th|[02]?2st|[02]?2rd|[02]?2th|[02]?3st|[02]?3nd|[02]?3th|[0-3]?[4-9]st|[0-3]?[4-9]nd|[0-3]?[4-9]rd)', i, re.IGNORECASE):
+        for j in re.findall(r'(?:[123]0nd|[123]0rd|[123]0st|[23]1nd|[23]1rd|[23]1th|[2]2st|[2]2rd|[2]2th|[2]3st|[2]3nd|[2]3th|[1-3][4-9]st|[1-3][4-9]nd|[1-3][4-9]rd|[4-9]st|[4-9]nd|[4-9]rd)', i, re.IGNORECASE):
             lst.remove(i)
-            print(i)
             print('\033[91m'+"ILLEGAL D&T ENTRY REMOVED (ILLEGAL ORDINAL NUMERAL):"+'\033[0m', '\033[94m'+i+'\033[0m')
 
     # removes illegal non-leap year February 29ths.
