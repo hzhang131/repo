@@ -1,6 +1,5 @@
 import re
-import datetime
-from datetime import date
+import sys
 
 MONTHS = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December',
           'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -22,7 +21,7 @@ def sanity_check(lst):
     Removes illegal date and time cases.
     """
 
-    # removes 02/30, 2/30, 2-30, 2.30, 2
+    # removes 02/30, 2/30, 2-30, 2.30
     for i in lst:
         for j in re.findall(r'(?:0?2[/\-\.]30|0?[2469][/\-\.]31|11[/\-\.]31)', i, re.IGNORECASE):
             lst.remove(i)
@@ -41,12 +40,9 @@ def sanity_check(lst):
 
     # removes February 19nd, March 2st, the 31st of February
     for i in lst:
-        for j in re.findall(r'(?:January|Jan|February|Feb|March|Mar|April|Apr|May|June|Jun|July|Jul|August|Aug|September|Sep|October|Oct|November|Nov|December|Dec)(?:[\s]|[\.][\s])(?:[023]?1[nd|th|rd]|[02]?2[st|rd|th]|[02]?3[st|nd|th]|[0-3]?[4-9][st|nd|rd])', i, re.IGNORECASE):
+        for j in re.findall(r'(?:[023]?1nd|[023]?1rd|[023]?1th|[02]?2st|[02]?2rd|[02]?2th|[02]?3st|[02]?3nd|[02]?3th|[0-3]?[4-9]st|[0-3]?[4-9]nd|[0-3]?[4-9]rd)', i, re.IGNORECASE):
             lst.remove(i)
-            print('\033[91m'+"ILLEGAL D&T ENTRY REMOVED (ILLEGAL ORDINAL NUMERAL):"+'\033[0m', '\033[94m'+i+'\033[0m')
-        # for j in re.findall(r'the[\s](?:[023]?1[nd|th|rd]|[02]?2[st|rd|th]|[02]?3[st|nd|th]|[0-3]?[4-9][st|nd|rd])', i, re.IGNORECASE):
-        for j in re.findall(r'the[\s]29rd', i, re.IGNORECASE):
-            lst.remove(i)
+            print(i)
             print('\033[91m'+"ILLEGAL D&T ENTRY REMOVED (ILLEGAL ORDINAL NUMERAL):"+'\033[0m', '\033[94m'+i+'\033[0m')
 
     # removes illegal non-leap year February 29ths.
@@ -164,7 +160,7 @@ def tner(filename):
 
     # try to capture the following variants.
     # 1963
-    for i in re.findall(r'[\s][12]\d{3}', s, re.IGNORECASE):
+    for i in re.findall(r'[12]\d{3}', s, re.IGNORECASE):
         lst.append(i)
         s = s.replace(i, "")
 
@@ -179,4 +175,4 @@ def tner(filename):
     print('\033[92m'+"OUTPUT SAVED TO output.txt"+'\033[0m')
     return
 
-tner("input.txt")
+tner(sys.argv[1])
