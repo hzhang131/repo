@@ -1,0 +1,44 @@
+// Symbol table
+// Scope level 0:
+//	Symbol Name       Page Address
+//	----------------  ------------
+//	MAIN              3000
+//	OVER              3003
+//	NEW_CHAR          3004
+//	IS_BALANCED       300F
+//	COMPARE           3013
+//	ONE               301C
+//	CHECK_END         301E
+//	NI                301F
+//	NEW_INPUT         302A
+//	CHECK_PAR         302D
+//	IS_LT             3034
+//	IS_RT             3037
+//	DONE              303A
+//	TEMP_NEW_CHAR     303C
+//	TEMP_CHECK_PAR    303D
+//	TEMP_CHECK_END    303E
+//	TEMP_IS_BALANCED  303F
+//	TEMP_COMPARE      3040
+//	L_DIFF            3041
+//	R_DIFF            3042
+//	SPACE             3043
+//	NEW_LINE          3044
+//	CHAR_RETURN       3045
+//	UNBALANCED        3046
+//	NEG_OPEN          3049
+//	PUSH              304A
+//	OVERFLOW          3058
+//	DONE_PUSH         3059
+//	PUSH_SaveR3       305C
+//	PUSH_SaveR4       305D
+//	POP               305E
+//	UNDERFLOW         306B
+//	EOS               306E
+//	DONE_POP          306F
+//	POP_SaveR3        3072
+//	POP_SaveR4        3073
+//	STACK_END         3074
+//	STACK_START       3075
+//	STACK_TOP         3076
+

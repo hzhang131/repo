@@ -1,0 +1,9 @@
+printRev: 
+for input argument a a, the length of the second a is abnormal. 
+
+the length of the first a is 1.
+Whereas the length of the second "a" becomes 32734.
+
+The list of gdb commands I used:
+
+
