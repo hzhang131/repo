@@ -64,17 +64,25 @@ def transformToMaze(arm, goals, obstacles, window, granularity):
             coordinate = angleToIdx((i, j), offsets, granularity)
             if coordinate == start:
                 continue
-            if doesArmTipTouchGoals(arm.getEnd(), goals):
+            if doesArmTipTouchGoals(arm.getEnd(), goals) and not doesArmTouchObjects(arm.getArmPosDist(), obstacles):
                 goals_in_maze.append(coordinate)
+                if coordinate == (35, 75):
+                    print("Fuck1.")
                 continue
             if doesArmTouchObjects(arm.getArmPosDist(), obstacles):
                 walls.append(coordinate)
+                if coordinate == (35, 75):
+                    print("Fuck2.")
                 continue
             if doesArmTouchObjects(arm.getArmPosDist(), goals, True) and not doesArmTipTouchGoals(arm.getEnd(), goals):
                 walls.append(coordinate)
+                if coordinate == (35, 75):
+                    print("Fuck3.")
                 continue
             if not isArmWithinWindow(arm.getArmPos(), window):
                 walls.append(coordinate)
+                if coordinate == (35, 75):
+                    print("Fuck4.")
                 continue
             
     input_map = []
