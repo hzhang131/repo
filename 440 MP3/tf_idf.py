@@ -38,11 +38,46 @@ def compute_tf_idf(train_set, train_labels, dev_set):
             Returned list should have same size as dev_set (one word from each dev_set document)
     """
 
-
-
     # TODO: Write your code here
-    
+    # Extra credit lalala.
+    containing_doc = {}
+    returned_list = []
+    for stc in train_set:
+        considered_list = []
+        for word in stc:
+                if word not in containing_doc and word not in considered_list:
+                        containing_doc[word] = 1
+                        considered_list.append(word)
+                elif word in containing_doc and word not in considered_list:
+                        containing_doc[word] += 1
+                        considered_list.append(word)
+    print(len(train_set))
+    count = 0
+    for stc in dev_set:
+        # if count == 0:
+        #         print(stc)
+        shown_times = {}
+        Prob_dict = []
+        for word in stc:
+                if word not in shown_times:
+                        shown_times[word] = 1
+                elif word in shown_times:
+                        shown_times[word] += 1
+        for word in stc:
+                # if count == 0 and word in containing_doc:
+                #         print(word, shown_times.get(word), containing_doc.get(word))
+                if word in containing_doc:
+                        prob = shown_times.get(word) / len(stc) * np.log(8000.0/(1 + containing_doc.get(word)))
+                else:
+                        prob = shown_times.get(word) / len(stc) * np.log(8000.0)
+                Prob_dict.append((word, prob))
 
-
+        candidate = Prob_dict[0]
+        for entry in Prob_dict:
+                if entry[1] > candidate[1]:
+                        candidate = entry
+        returned_list.append(candidate[0])
+        count += 1
     # return list of words (should return a list, not numpy array or similar)
-    return []
+    print(returned_list)
+    return returned_list
