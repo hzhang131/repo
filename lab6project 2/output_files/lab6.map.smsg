@@ -1,0 +1,2 @@
+Warning (10273): Verilog HDL warning at slc3.sv(91): extended using "x" or "z" File: C:/Quartusprime/Lab projects/lab6project/slc3.sv Line: 91
+Info (10281): Verilog HDL Declaration information at slc3.sv(37): object "BEN" differs only in case from object "ben" in the same scope File: C:/Quartusprime/Lab projects/lab6project/slc3.sv Line: 37

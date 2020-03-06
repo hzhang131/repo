@@ -1,0 +1,440 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Quartusprime/Lab projects/lab6project/simulation/modelsim
+vALU
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1583010314
+!i10b 1
+!s100 n@TJgICXTjCWHJDolYUIZ1
+IS2a^<FnTS7XB]aT?@I2e22
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 register_sv_unit
+S1
+R0
+Z5 w1582943873
+Z6 8C:/Quartusprime/Lab projects/lab6project/register.sv
+Z7 FC:/Quartusprime/Lab projects/lab6project/register.sv
+L0 162
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1583010314.000000
+Z10 !s107 C:/Quartusprime/Lab projects/lab6project/register.sv|
+Z11 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/register.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -sv -work work {+incdir+C:/Quartusprime/Lab projects/lab6project}
+Z14 tCvgOpt 0
+n@a@l@u
+vben
+R1
+R2
+!i10b 1
+!s100 kBc`82lX9?NKD4zJeD_nc3
+IQmMSQNeCNnJ5`oVJ6f>4=2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 177
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vdatapath
+R1
+R2
+!i10b 1
+!s100 AXhSPm81_o^1CYKiP2_Hm1
+Iz=z0HbPBL>?Wb9GBH:WDh0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+Z15 L0 16
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vHexDriver
+R1
+Z16 !s110 1583010315
+!i10b 1
+!s100 =R2i165HPJgkY;aA[TRmG3
+I`DaJ:JG1NR__ifoo8DN[Z3
+R3
+!s105 HexDriver_sv_unit
+S1
+R0
+w1581795573
+8C:/Quartusprime/Lab projects/lab5project/HexDriver.sv
+FC:/Quartusprime/Lab projects/lab5project/HexDriver.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z17 !s108 1583010315.000000
+!s107 C:/Quartusprime/Lab projects/lab5project/HexDriver.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab5project|C:/Quartusprime/Lab projects/lab5project/HexDriver.sv|
+!i113 1
+R12
+!s92 -sv -work work {+incdir+C:/Quartusprime/Lab projects/lab5project}
+R14
+n@hex@driver
+vISDU
+R1
+R2
+!i10b 1
+!s100 9K6BEJhbj]o@bOPKi1kQH0
+I2D9?o;lOj0:KTIZmTRkJo3
+R3
+!s105 ISDU_sv_unit
+S1
+R0
+w1583008037
+8C:/Quartusprime/Lab projects/lab6project/ISDU.sv
+FC:/Quartusprime/Lab projects/lab6project/ISDU.sv
+L0 18
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Quartusprime/Lab projects/lab6project/ISDU.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/ISDU.sv|
+!i113 1
+R12
+R13
+R14
+n@i@s@d@u
+vlab6_toplevel
+R1
+R16
+!i10b 1
+!s100 k;XFYEj__@<f`n61h0?<B3
+IJHSQD9FU;RKUia4RJLJIW2
+R3
+!s105 lab6_toplevel_sv_unit
+S1
+R0
+w1582405188
+8C:/Quartusprime/Lab projects/lab6project/lab6_toplevel.sv
+FC:/Quartusprime/Lab projects/lab6project/lab6_toplevel.sv
+L0 10
+R8
+r1
+!s85 0
+31
+R17
+!s107 C:/Quartusprime/Lab projects/lab6project/lab6_toplevel.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/lab6_toplevel.sv|
+!i113 1
+R12
+R13
+R14
+vMem2IO
+R1
+R2
+!i10b 1
+!s100 d<=A`]_5?F8Tz<i9:]04<3
+IfDB?MIO>Ng=55dom4SCo<3
+R3
+!s105 Mem2IO_sv_unit
+S1
+R0
+w1582399321
+8C:/Quartusprime/Lab projects/lab6project/Mem2IO.sv
+FC:/Quartusprime/Lab projects/lab6project/Mem2IO.sv
+R15
+R8
+r1
+!s85 0
+31
+!s108 1583010313.000000
+!s107 C:/Quartusprime/Lab projects/lab6project/Mem2IO.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/Mem2IO.sv|
+!i113 1
+R12
+R13
+R14
+n@mem2@i@o
+Xmemory_contents_sv_unit
+R1
+Z18 DXx4 work 6 SLC3_2 0 22 Qd^Rie1[Ig>91a7=?442X1
+VCVIOgfBeIG@BQZRM]g=<Y3
+r1
+!s85 0
+31
+!i10b 1
+!s100 M?ii[WX0@LJh^Gd@C:lHX3
+ICVIOgfBeIG@BQZRM]g=<Y3
+!i103 1
+S1
+R0
+Z19 w1582959691
+Z20 8C:/Quartusprime/Lab projects/lab6project/memory_contents.sv
+Z21 FC:/Quartusprime/Lab projects/lab6project/memory_contents.sv
+Z22 FC:/Quartusprime/Lab projects/lab6project/SLC3_2.sv
+L0 14
+R8
+R17
+Z23 !s107 C:/Quartusprime/Lab projects/lab6project/SLC3_2.sv|C:/Quartusprime/Lab projects/lab6project/memory_contents.sv|
+Z24 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/memory_contents.sv|
+!i113 1
+R12
+R13
+R14
+vmemory_parser
+R1
+R18
+DXx4 work 23 memory_contents_sv_unit 0 22 CVIOgfBeIG@BQZRM]g=<Y3
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ndiPB4gTIHg?5WZXdASHa3
+I[T4jElfBVQ`;hQRk3>ohM3
+!s105 memory_contents_sv_unit
+S1
+R0
+w1582958126
+R20
+R21
+L0 17
+R8
+R17
+R23
+R24
+!i113 1
+R12
+R13
+R14
+vnzp
+R1
+R2
+!i10b 1
+!s100 g=TUJ1hHljB^MVjnMAL`W1
+IdFUe]L]Mo3A5ENT^l3fni2
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 35
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vreg_file
+R1
+R2
+!i10b 1
+!s100 A1@lWcoz100T?9BWKo57E0
+I=D;HHFkPzahGo?J0lUHGX0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 66
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vregister
+R1
+R2
+!i10b 1
+!s100 ZelPIIRRcnGTO@PGZfL@A0
+IN<g]EVDoBW5oiBM>W[2MK0
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 1
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vslc3
+R1
+R16
+!i10b 1
+!s100 [GL:>zC>kb@4iP5f[aQj43
+I@XeBP;ze7JNaMmVZ3j:[_0
+R3
+!s105 slc3_sv_unit
+S1
+R0
+w1583010123
+8C:/Quartusprime/Lab projects/lab6project/slc3.sv
+FC:/Quartusprime/Lab projects/lab6project/slc3.sv
+L0 19
+R8
+r1
+!s85 0
+31
+R17
+!s107 C:/Quartusprime/Lab projects/lab6project/slc3.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/slc3.sv|
+!i113 1
+R12
+R13
+R14
+XSLC3_2
+R1
+VQd^Rie1[Ig>91a7=?442X1
+r1
+!s85 0
+31
+!i10b 1
+!s100 hmA4G3QUGZU:=7dXFPB7d1
+IQd^Rie1[Ig>91a7=?442X1
+S1
+R0
+R19
+8C:/Quartusprime/Lab projects/lab6project/SLC3_2.sv
+R22
+L0 24
+R8
+R17
+R23
+R24
+!i113 1
+R12
+R13
+R14
+n@s@l@c3_2
+vtest_memory
+R1
+R16
+!i10b 1
+!s100 AZAU7PQT4]][EEHo>57W43
+IbFjiI0=X5O4]_hefDJW]I0
+R3
+!s105 test_memory_sv_unit
+S1
+R0
+w1582956489
+8C:/Quartusprime/Lab projects/lab6project/test_memory.sv
+FC:/Quartusprime/Lab projects/lab6project/test_memory.sv
+L0 22
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Quartusprime/Lab projects/lab6project/test_memory.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/test_memory.sv|
+!i113 1
+R12
+R13
+R14
+vtestbench
+R1
+!s110 1583010316
+!i10b 1
+!s100 VJM80d=alS@V9FQEEY7[G0
+Im:DT1UeOP[cXjbOAgPmcC1
+R3
+!s105 testbench28229_sv_unit
+S1
+R0
+w1583010300
+8C:/Quartusprime/Lab projects/lab6project/testbench(2).sv
+FC:/Quartusprime/Lab projects/lab6project/testbench(2).sv
+L0 1
+R8
+r1
+!s85 0
+31
+R17
+!s107 C:/Quartusprime/Lab projects/lab6project/testbench(2).sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/testbench(2).sv|
+!i113 1
+R12
+R13
+R14
+vtristate
+R1
+R2
+!i10b 1
+!s100 Akazoo=71mOgoH<gVR_UC0
+I=jQMoR=nTNKmVom3A_<Qf3
+R3
+!s105 tristate_sv_unit
+S1
+R0
+w1582399376
+8C:/Quartusprime/Lab projects/lab6project/tristate.sv
+FC:/Quartusprime/Lab projects/lab6project/tristate.sv
+R15
+R8
+r1
+!s85 0
+31
+R9
+!s107 C:/Quartusprime/Lab projects/lab6project/tristate.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Quartusprime/Lab projects/lab6project|C:/Quartusprime/Lab projects/lab6project/tristate.sv|
+!i113 1
+R12
+R13
+R14
